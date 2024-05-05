@@ -14,6 +14,7 @@ class DrawerItemsListView extends StatefulWidget {
 
 class _DrawerItemsListViewState extends State<DrawerItemsListView> {
   int active = 0;
+
   final List<DrawerItemModel> drawerItems = [
     DrawerItemModel(title: "Dashboard", image: Assets.imageDashboard),
     DrawerItemModel(title: "My Transaction", image: Assets.imageMyTransaction),
