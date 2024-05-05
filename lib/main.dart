@@ -12,6 +12,7 @@ class ResponsiveDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(textTheme: GoogleFonts.montserratTextTheme()),
       home: const DashboardView(),
     );

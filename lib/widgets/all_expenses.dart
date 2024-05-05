@@ -14,6 +14,9 @@ class AllExpences extends StatelessWidget {
       child: const Column(
         children: [
           AllExpencesHeader(),
+          SizedBox(
+            height: 16,
+          ),
         ],
       ),
     );
