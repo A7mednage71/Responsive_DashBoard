@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:nag/utils/app_images.dart';
-import 'package:nag/utils/app_styles.dart';
+import 'package:nag/widgets/all_expences_header.dart';
 
 class AllExpences extends StatelessWidget {
   const AllExpences({super.key});
@@ -13,18 +11,9 @@ class AllExpences extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Column(
+      child: const Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Text(
-                "All Expenses",
-                style: AppStyles.semiBold20,
-              ),
-              SvgPicture.asset(Assets.imageAllExpensesheaderButtom),
-            ],
-          )
+          AllExpencesHeader(),
         ],
       ),
     );
