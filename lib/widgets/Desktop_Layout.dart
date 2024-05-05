@@ -15,6 +15,13 @@ class DesktopLayout extends StatelessWidget {
         Expanded(
           child: CustomDrawer(),
         ),
+        SizedBox(
+          width: 25,
+        ),
+        Expanded(
+          flex: 2,
+          child: Column(),
+        )
       ],
     );
   }
