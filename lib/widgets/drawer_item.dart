@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:nag/models/drawer_model.dart';
+import 'package:nag/widgets/active_drawer_item.dart';
+import 'package:nag/widgets/inactive_draweritem.dart';
 
 class DrawerItem extends StatelessWidget {
-  const DrawerItem({super.key, required this.model});
+  const DrawerItem({super.key, required this.model, required this.iSactive});
   final DrawerItemModel model;
+  final bool iSactive;
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: SvgPicture.asset(model.image),
-      title: Text(model.title),
-    );
+    return iSactive
+        ? ActiveDrawerItem(model: model)
+        : InactiveDrawerItem(model: model);
   }
 }

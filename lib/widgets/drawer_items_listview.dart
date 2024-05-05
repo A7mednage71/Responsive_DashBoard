@@ -34,14 +34,15 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView> {
             if (active != index) {
               setState(() {
                 active = index;
+                debugPrint("$active");
               });
             }
-            debugPrint("$active");
           },
           child: Padding(
             padding: const EdgeInsets.only(top: 20),
             child: DrawerItem(
               model: drawerItems[index],
+              iSactive: active == index,
             ),
           ),
         );
