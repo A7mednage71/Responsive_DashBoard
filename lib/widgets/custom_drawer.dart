@@ -24,7 +24,7 @@ class CustomDrawer extends StatelessWidget {
                 color: Color(0xffFAFAFA),
                 elevation: 0,
                 child: UserInfoListTile(
-                  image: Assets.imageAvatar1,
+                  image: Assets.imageAvatar,
                   title: "Lekan Okeowo",
                   subtitle: "demo@gmail.com",
                 ),

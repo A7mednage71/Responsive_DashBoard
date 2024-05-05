@@ -1,9 +1,13 @@
 class Assets {
   Assets._();
+  
+  /// Assets for imageAllExpensesheaderButtom
+  /// assets/AllExpensesheaderButtom.svg
+  static const String imageAllExpensesheaderButtom = "assets/AllExpensesheaderButtom.svg";
 
-  /// Assets for imageAvatar1
-  /// assets/avatar_1.svg
-  static const String imageAvatar1 = "assets/avatar.svg";
+  /// Assets for imageAvatar
+  /// assets/avatar.svg
+  static const String imageAvatar = "assets/avatar.svg";
 
   /// Assets for imageBalance
   /// assets/balance.svg
@@ -57,3 +61,4 @@ class Assets {
   /// assets/wallet_account.svg
   static const String imageWalletAccount = "assets/wallet_account.svg";
 }
+
