@@ -13,7 +13,7 @@ class AllExpancesItemHeader extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         CircleAvatar(
-          radius: 25,
+          radius: 30,
           backgroundColor: const Color(0xffFAFAFA),
           child: SvgPicture.asset(image),
         ),

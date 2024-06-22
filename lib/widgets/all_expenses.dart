@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:nag/widgets/all_expances_items_body.dart';
 import 'package:nag/widgets/all_expences_header.dart';
-
 
 class AllExpences extends StatelessWidget {
   const AllExpences({super.key});
@@ -20,9 +18,7 @@ class AllExpences extends StatelessWidget {
         child: const Column(
           children: [
             AllExpencesHeader(),
-            SizedBox(
-              height: 16,
-            ),
+            SizedBox(height: 16),
             AllExpancesItemBody()
           ],
         ),

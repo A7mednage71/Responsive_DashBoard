@@ -18,7 +18,7 @@ class AllExpencesitem extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpancesItemHeader(
-            expancesItemsModel: expancesItemsModel,
+            image: expancesItemsModel.image,
           ),
           const SizedBox(
             height: 34,
