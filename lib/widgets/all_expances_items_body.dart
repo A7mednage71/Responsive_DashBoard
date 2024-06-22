@@ -8,43 +8,45 @@ class AllExpancesItemBody extends StatelessWidget {
     super.key,
   });
 
+  static List<AllExpancesItemsModel> items = [
+    AllExpancesItemsModel(
+      image: Assets.imageBalance,
+      title: "Balance",
+      date: "April 2024",
+      price: r"$20,129",
+    ),
+    AllExpancesItemsModel(
+      image: Assets.imageIncome,
+      title: "Income",
+      date: "june 2016",
+      price: r"$20,000",
+    ),
+    AllExpancesItemsModel(
+        image: Assets.imageExpences,
+        title: "Expences",
+        date: "june 2024",
+        price: r"$38,000")
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: [
-        Expanded(
-            child: AllExpencesitem(
-          expancesItemsModel: AllExpancesItemsModel(
-            image: Assets.imageBalance,
-            title: "Balance",
-            date: "April 2024",
-            price: r"$20,129",
-          ),
-        )),
-        const SizedBox(
-          width: 12,
-        ),
-        Expanded(
-            child: AllExpencesitem(
-          expancesItemsModel: AllExpancesItemsModel(
-            image: Assets.imageIncome,
-            title: "Income",
-            date: "june 2016",
-            price: r"$20,000",
-          ),
-        )),
-        const SizedBox(
-          width: 12,
-        ),
-        Expanded(
-            child: AllExpencesitem(
-          expancesItemsModel: AllExpancesItemsModel(
-              image: Assets.imageExpences,
-              title: "Expences",
-              date: "june 2024",
-              price: r"$38,000"),
-        )),
-      ],
-    );
+        children: items.asMap().entries.map(
+      (e) {
+        int index = e.key;
+        var value = e.value;
+
+        if (index == 1) {
+          return Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: AllExpencesitem(expancesItemsModel: value),
+            ),
+          );
+        } else {
+          return Expanded(child: AllExpencesitem(expancesItemsModel: value));
+        }
+      },
+    ).toList());
   }
 }
