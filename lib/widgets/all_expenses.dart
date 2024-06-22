@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:nag/widgets/all_expances_items_body.dart';
 import 'package:nag/widgets/all_expences_header.dart';
-import 'package:nag/widgets/all_expences_item.dart';
+
 
 class AllExpences extends StatelessWidget {
   const AllExpences({super.key});
@@ -22,19 +23,7 @@ class AllExpences extends StatelessWidget {
             SizedBox(
               height: 16,
             ),
-            Row(
-              children: [
-                Expanded(child: AllExpencesitem()),
-                SizedBox(
-                  width: 12,
-                ),
-                Expanded(child: AllExpencesitem()),
-                SizedBox(
-                  width: 12,
-                ),
-                Expanded(child: AllExpencesitem()),
-              ],
-            )
+            AllExpancesItemBody()
           ],
         ),
       ),
