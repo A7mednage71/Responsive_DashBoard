@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nag/models/all_expances_items_model.dart';
 import 'package:nag/utils/app_images.dart';
 import 'package:nag/widgets/all_expences_item.dart';
+import 'package:nag/widgets/is_active_expances_item.dart';
 
 class AllExpancesItemBody extends StatelessWidget {
   const AllExpancesItemBody({
@@ -40,11 +41,18 @@ class AllExpancesItemBody extends StatelessWidget {
           return Expanded(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: AllExpencesitem(expancesItemsModel: value),
+              child: AllExpancesItem(
+                iSactive: true,
+                expancesItemsModel: value,
+              ),
             ),
           );
         } else {
-          return Expanded(child: AllExpencesitem(expancesItemsModel: value));
+          return Expanded(
+              child: AllExpancesItem(
+            expancesItemsModel: value,
+            iSactive: false,
+          ));
         }
       },
     ).toList());

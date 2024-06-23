@@ -5,8 +5,10 @@ class AllExpancesItemHeader extends StatelessWidget {
   const AllExpancesItemHeader({
     super.key,
     required this.image,
+    required this.isactive,
   });
   final String image;
+  final bool isactive;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -14,10 +16,17 @@ class AllExpancesItemHeader extends StatelessWidget {
       children: [
         CircleAvatar(
           radius: 30,
-          backgroundColor: const Color(0xffFAFAFA),
-          child: SvgPicture.asset(image),
+          backgroundColor:
+              isactive ? const Color(0xff5FBEF3) : const Color(0xffFAFAFA),
+          child: SvgPicture.asset(
+            image,
+            color: isactive ? const Color(0xffFFFFFF) : const Color(0xff4EB7F2),
+          ),
         ),
-        const Icon(Icons.arrow_forward_ios),
+        Icon(
+          Icons.arrow_forward_ios,
+          color: isactive ? const Color(0xffFFFFFF) : const Color(0xff064061),
+        ),
       ],
     );
   }
