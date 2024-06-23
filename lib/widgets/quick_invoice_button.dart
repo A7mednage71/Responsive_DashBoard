@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nag/utils/app_styles.dart';
 
-class QuickInvoiceBottom extends StatelessWidget {
-  const QuickInvoiceBottom({
+class QuickInvoiceButton extends StatelessWidget {
+  const QuickInvoiceButton({
     super.key,
     required this.text,
     this.textColor,
