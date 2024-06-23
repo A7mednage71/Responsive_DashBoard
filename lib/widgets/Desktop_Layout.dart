@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:nag/widgets/all_expenses.dart';
 import 'package:nag/widgets/custom_drawer.dart';
+import 'package:nag/widgets/quick_invoice_widget.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({
@@ -24,6 +25,10 @@ class DesktopLayout extends StatelessWidget {
           child: Column(
             children: [
               AllExpences(),
+              SizedBox(
+                height: 24,
+              ),
+              QuickInvoiceWidget(),
             ],
           ),
         )
