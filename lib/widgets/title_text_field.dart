@@ -9,6 +9,7 @@ class TitleTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(title, style: AppStyles.medium16),
         const SizedBox(height: 12),
