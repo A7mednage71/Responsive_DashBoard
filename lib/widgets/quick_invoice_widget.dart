@@ -3,7 +3,6 @@ import 'package:nag/widgets/custom_backgroud_container.dart';
 import 'package:nag/widgets/custom_data_form.dart';
 import 'package:nag/widgets/latest_transaction.dart';
 import 'package:nag/widgets/quick_invoice_buttom_widget.dart';
-import 'package:nag/widgets/quick_invoice_button.dart';
 import 'package:nag/widgets/quick_invoice_header.dart';
 
 class QuickInvoiceWidget extends StatelessWidget {
