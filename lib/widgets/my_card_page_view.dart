@@ -3,13 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:nag/widgets/my_card_Item.dart';
 
 class MyCardPageView extends StatelessWidget {
-  const MyCardPageView({super.key});
+  const MyCardPageView({super.key, required this.controller});
 
+  final PageController controller;
   @override
   Widget build(BuildContext context) {
     return ExpandablePageView(
+        controller: controller,
         children: List.generate(3, (index) {
-      return const MyCardItem();
-    }));
+          return const MyCardItem();
+        }));
   }
 }
