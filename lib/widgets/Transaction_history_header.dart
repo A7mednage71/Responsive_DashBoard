@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nag/utils/app_styles.dart';
 
@@ -7,16 +6,25 @@ class TransactionHistoryHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text("Transaction History", style: AppStyles.semiBold20),
-        TextButton(
-          onPressed: () {},
-          child: Text("See all",
-              style:
-                  AppStyles.medium16.copyWith(color: const Color(0xff4EB7F2))),
-        )
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const Text("Transaction History", style: AppStyles.semiBold20),
+            TextButton(
+              onPressed: () {},
+              child: Text("See all",
+                  style: AppStyles.medium16
+                      .copyWith(color: const Color(0xff4EB7F2))),
+            )
+          ],
+        ),
+        const SizedBox(height: 16),
+        Text("13 April 2022",
+            style: AppStyles.medium16.copyWith(color: const Color(0xffAAAAAA))),
+        const SizedBox(height: 16),
       ],
     );
   }
