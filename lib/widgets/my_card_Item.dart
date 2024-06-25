@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:nag/utils/app_images.dart';
 import 'package:nag/utils/app_styles.dart';
 
-class MyCard extends StatelessWidget {
-  const MyCard({super.key});
+class MyCardItem extends StatelessWidget {
+  const MyCardItem({super.key});
 
   @override
   Widget build(BuildContext context) {

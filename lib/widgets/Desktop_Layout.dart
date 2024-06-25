@@ -9,6 +9,7 @@ import 'package:nag/widgets/custom_drawer.dart';
 import 'package:nag/widgets/dot_indicator.dart';
 import 'package:nag/widgets/dot_indicator_list.dart';
 import 'package:nag/widgets/my_card_page_view.dart';
+import 'package:nag/widgets/my_card_section.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({
@@ -33,16 +34,15 @@ class DesktopLayout extends StatelessWidget {
           width: 25,
         ),
         Expanded(
-          child: CustomBackgroundContainer(
-            child: Column(
-              children: [
-                SizedBox(height: 24),
-                MyCardPageView(),
-                SizedBox(height: 19),
-                DotIndicatorList(),
-                Divider(color: Color(0xffF1F1F1), height: 40),
-                TransactionHistoryHeader(),
-              ],
+          child: Padding(
+            padding: EdgeInsets.only(top: 40),
+            child: CustomBackgroundContainer(
+              child: Column(
+                children: [
+                  MyCardSection(),
+                  TransactionHistoryHeader(),
+                ],
+              ),
             ),
           ),
         ),
