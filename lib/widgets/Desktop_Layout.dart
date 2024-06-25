@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:nag/widgets/all_expenses.dart';
 import 'package:nag/widgets/all_expenses_and_quick_invoice_section.dart';
 import 'package:nag/widgets/custom_drawer.dart';
-import 'package:nag/widgets/quick_invoice_widget.dart';
+import 'package:nag/widgets/myCard.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({
@@ -34,6 +33,7 @@ class DesktopLayout extends StatelessWidget {
             SizedBox(
               height: 24,
             ),
+            MyCard()
           ],
         ))
       ],
