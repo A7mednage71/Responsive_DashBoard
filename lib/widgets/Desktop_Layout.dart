@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:nag/utils/app_styles.dart';
+import 'package:nag/widgets/Transaction_history_header.dart';
 import 'package:nag/widgets/all_expenses_and_quick_invoice_section.dart';
 import 'package:nag/widgets/custom_backgroud_container.dart';
 import 'package:nag/widgets/custom_drawer.dart';
@@ -31,15 +33,19 @@ class DesktopLayout extends StatelessWidget {
           width: 25,
         ),
         Expanded(
+          child: CustomBackgroundContainer(
             child: Column(
-          children: [
-            SizedBox(height: 24),
-            MyCardPageView(),
-            SizedBox(height: 19),
-            DotIndicatorList(),
-            Divider(),
-          ],
-        ))
+              children: [
+                SizedBox(height: 24),
+                MyCardPageView(),
+                SizedBox(height: 19),
+                DotIndicatorList(),
+                Divider(color: Color(0xffF1F1F1), height: 40),
+                TransactionHistoryHeader(),
+              ],
+            ),
+          ),
+        ),
       ],
     );
   }
