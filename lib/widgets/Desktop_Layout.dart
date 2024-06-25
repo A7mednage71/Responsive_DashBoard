@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:nag/widgets/all_expenses_and_quick_invoice_section.dart';
 import 'package:nag/widgets/custom_drawer.dart';
-import 'package:nag/widgets/myCard.dart';
 import 'package:nag/widgets/my_card_page_view.dart';
 
 class DesktopLayout extends StatelessWidget {
