@@ -14,6 +14,7 @@ class InactiveDrawerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      contentPadding: EdgeInsets.zero,
       leading: SvgPicture.asset(model.image),
       title: Text(
         model.title,
