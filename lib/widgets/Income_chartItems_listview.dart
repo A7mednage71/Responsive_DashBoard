@@ -27,12 +27,8 @@ class IncomeChartItemsListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: items.length,
-      itemBuilder: (context, index) {
-        return IncomeListTileItem(chatItemModel: items[index]);
-      },
+    return Column(
+      children: items.map((e) => IncomeListTileItem(chatItemModel: e)).toList(),
     );
   }
 }
