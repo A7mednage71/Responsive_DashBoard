@@ -13,7 +13,7 @@ class MycardAndIncomeAndTransactionSection extends StatelessWidget {
       children: [
         MyCardAndTransactionHistorySection(),
         SizedBox(height: 24),
-        Expanded(child: IncomeSection()),
+        IncomeSection(),
       ],
     );
   }

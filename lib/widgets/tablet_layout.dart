@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nag/widgets/all_expenses_and_quick_invoice_section.dart';
 import 'package:nag/widgets/custom_drawer.dart';
+import 'package:nag/widgets/mycard_income_transaction_section.dart';
 
 class TabletLayout extends StatelessWidget {
   const TabletLayout({super.key});
@@ -17,7 +18,14 @@ class TabletLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 3,
-          child: AllExpancesAndQuickInvoiceSection(),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                AllExpancesAndQuickInvoiceSection(),
+                MycardAndIncomeAndTransactionSection(),
+              ],
+            ),
+          ),
         ),
         SizedBox(
           width: 25,
