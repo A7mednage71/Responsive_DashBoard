@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:nag/widgets/all_expenses_and_quick_invoice_section.dart';
 import 'package:nag/widgets/custom_drawer.dart';
 import 'package:nag/widgets/income_section.dart';
+import 'package:nag/widgets/mycard_and_transaction_history_section.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({
@@ -27,10 +28,19 @@ class DesktopLayout extends StatelessWidget {
         SizedBox(
           width: 25,
         ),
-        // Expanded(
-        //   child: MyCardAndTransactionHistorySection(),
-        // ),
-        Expanded(child: IncomeSection())
+        Expanded(
+            child: Column(
+          children: [
+            // Expanded(
+            //   flex: 3,
+            //   child: MyCardAndTransactionHistorySection(),
+            // ),
+            SizedBox(height: 24),
+            Expanded(
+              child: IncomeSection(),
+            ),
+          ],
+        ))
       ],
     );
   }
