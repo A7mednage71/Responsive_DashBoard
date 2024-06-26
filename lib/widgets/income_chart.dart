@@ -12,7 +12,10 @@ class _IcomeChartState extends State<IcomeChart> {
   int isactive = -1;
   @override
   Widget build(BuildContext context) {
-    return PieChart(getChartData());
+    return AspectRatio(
+      aspectRatio: 1 / 1,
+      child: PieChart(getChartData()),
+    );
   }
 
   PieChartData getChartData() {
