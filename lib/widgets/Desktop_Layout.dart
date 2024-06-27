@@ -26,24 +26,22 @@ class DesktopLayout extends StatelessWidget {
               slivers: [
                 SliverFillRemaining(
                   hasScrollBody: false,
-                  child: IntrinsicHeight(
-                    child: Row(
-                      children: [
-                        Expanded(
-                          flex: 2,
-                          child: Padding(
-                            padding: EdgeInsets.only(top: 40),
-                            child: AllExpancesAndQuickInvoiceSection(),
-                          ),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 2,
+                        child: Padding(
+                          padding: EdgeInsets.only(top: 40),
+                          child: AllExpancesAndQuickInvoiceSection(),
                         ),
-                        SizedBox(
-                          width: 25,
-                        ),
-                        Expanded(
-                          child: MycardAndIncomeAndTransactionSection(),
-                        )
-                      ],
-                    ),
+                      ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Expanded(
+                        child: MycardAndIncomeAndTransactionSection(),
+                      )
+                    ],
                   ),
                 )
               ],

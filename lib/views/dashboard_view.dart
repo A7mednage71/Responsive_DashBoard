@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:nag/utils/app_styles.dart';
 import 'package:nag/widgets/Desktop_Layout.dart';
@@ -11,6 +13,7 @@ class DashboardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    log(MediaQuery.of(context).size.width.toString());
     return Scaffold(
       drawer: MediaQuery.of(context).size.width < 800
           ? const Drawer(child: CustomDrawer())
