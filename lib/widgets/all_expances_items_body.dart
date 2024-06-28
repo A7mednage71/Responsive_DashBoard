@@ -42,42 +42,24 @@ class _AllExpancesItemBodyState extends State<AllExpancesItemBody> {
       (e) {
         int index = e.key;
         var value = e.value;
-
-        if (index == 1) {
-          return Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: GestureDetector(
-                onTap: () {
-                  if (iSselected != index) {
-                    setState(() {
-                      iSselected = index;
-                    });
-                  }
-                },
-                child: AllExpancesItem(
-                  iSactive: iSselected == index,
-                  expancesItemsModel: value,
-                ),
+        return Expanded(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: index == 1 ? 8 : 0),
+            child: GestureDetector(
+              onTap: () {
+                if (iSselected != index) {
+                  setState(() {
+                    iSselected = index;
+                  });
+                }
+              },
+              child: AllExpancesItem(
+                iSactive: iSselected == index,
+                expancesItemsModel: value,
               ),
             ),
-          );
-        } else {
-          return Expanded(
-              child: GestureDetector(
-            onTap: () {
-              if (iSselected != index) {
-                setState(() {
-                  iSselected = index;
-                });
-              }
-            },
-            child: AllExpancesItem(
-              expancesItemsModel: value,
-              iSactive: iSselected == index,
-            ),
-          ));
-        }
+          ),
+        );
       },
     ).toList());
   }
