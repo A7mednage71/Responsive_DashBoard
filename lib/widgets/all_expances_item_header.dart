@@ -14,13 +14,16 @@ class AllExpancesItemHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        CircleAvatar(
-          radius: 30,
-          backgroundColor:
-              isactive ? const Color(0xff5FBEF3) : const Color(0xffFAFAFA),
-          child: SvgPicture.asset(
-            image,
-            color: isactive ? const Color(0xffFFFFFF) : const Color(0xff4EB7F2),
+        Flexible(
+          child: CircleAvatar(
+            radius: 30,
+            backgroundColor:
+                isactive ? const Color(0xff5FBEF3) : const Color(0xffFAFAFA),
+            child: SvgPicture.asset(
+              image,
+              color:
+                  isactive ? const Color(0xffFFFFFF) : const Color(0xff4EB7F2),
+            ),
           ),
         ),
         Icon(

@@ -44,7 +44,7 @@ class _AllExpancesItemBodyState extends State<AllExpancesItemBody> {
         var value = e.value;
         return Expanded(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: index == 1 ? 8 : 0),
+            padding: EdgeInsets.symmetric(horizontal: index == 1 ? 20 : 0),
             child: GestureDetector(
               onTap: () {
                 if (iSselected != index) {
