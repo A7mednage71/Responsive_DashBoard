@@ -18,6 +18,7 @@ class ActiveDrawerItem extends StatelessWidget {
       leading: SvgPicture.asset(model.image),
       title: FittedBox(
         fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
         child: Text(
           model.title,
           style: AppStyles.bold16(context),
