@@ -16,9 +16,13 @@ class InactiveDrawerItem extends StatelessWidget {
     return ListTile(
       contentPadding: EdgeInsets.zero,
       leading: SvgPicture.asset(model.image),
-      title: Text(
-        model.title,
-        style: AppStyles.regular16(context),
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          model.title,
+          style: AppStyles.regular16(context),
+        ),
       ),
     );
   }

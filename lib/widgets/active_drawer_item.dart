@@ -16,9 +16,12 @@ class ActiveDrawerItem extends StatelessWidget {
     return ListTile(
       contentPadding: EdgeInsets.zero,
       leading: SvgPicture.asset(model.image),
-      title: Text(
-        model.title,
-        style: AppStyles.bold16(context),
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        child: Text(
+          model.title,
+          style: AppStyles.bold16(context),
+        ),
       ),
       trailing: Container(
         width: 3,
