@@ -35,7 +35,7 @@ class MyCardItem extends StatelessWidget {
             ),
             const Spacer(),
             Padding(
-              padding: const EdgeInsets.only(right: 24, bottom: 27),
+              padding: const EdgeInsets.only(right: 24),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
@@ -48,7 +48,8 @@ class MyCardItem extends StatelessWidget {
                     "12/20 - 124",
                     style: AppStyles.regular16(context)
                         .copyWith(color: const Color(0xffFFFFFF)),
-                  )
+                  ),
+                  const SizedBox(height: 24)
                 ],
               ),
             )
