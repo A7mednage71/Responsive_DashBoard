@@ -28,7 +28,7 @@ class QuickInvoiceButton extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: AppStyles.semiBold18
+          style: AppStyles.semiBold18(context)
               .copyWith(color: textColor ?? const Color(0xffFFFFFF)),
         ),
       ),

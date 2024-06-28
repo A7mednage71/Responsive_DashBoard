@@ -19,9 +19,10 @@ class IncomeListTileItem extends StatelessWidget {
           shape: BoxShape.circle,
         ),
       ),
-      title: Text(chatItemModel.title, style: AppStyles.regular16),
+      title: Text(chatItemModel.title, style: AppStyles.regular16(context)),
       trailing: Text(chatItemModel.percent,
-          style: AppStyles.medium16.copyWith(color: const Color(0xff208CC8))),
+          style: AppStyles.medium16(context)
+              .copyWith(color: const Color(0xff208CC8))),
     );
   }
 }

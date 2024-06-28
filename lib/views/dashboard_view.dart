@@ -23,7 +23,7 @@ class DashboardView extends StatelessWidget {
               backgroundColor: const Color(0xff4EB7F2),
               elevation: 20,
               title: Text("Responsive Dashboard",
-                  style: AppStyles.semiBold20.copyWith(color: Colors.white)),
+                  style: AppStyles.semiBold20(context).copyWith(color: Colors.white)),
             )
           : null,
       backgroundColor: const Color.fromARGB(255, 241, 241, 241),

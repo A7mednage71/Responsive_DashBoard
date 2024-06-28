@@ -13,7 +13,7 @@ class QuickInvoiceHeader extends StatelessWidget {
       children: [
         Text(
           "Quick Invoice",
-          style: AppStyles.semiBold20,
+          style: AppStyles.semiBold20(context),
         ),
         const CircleAvatar(
           backgroundColor: Color(0xffFAFAFA),

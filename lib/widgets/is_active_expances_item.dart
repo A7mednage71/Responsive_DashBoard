@@ -27,21 +27,22 @@ class IsActiveAllExpencesitem extends StatelessWidget {
           ),
           Text(
             expancesItemsModel.title,
-            style: AppStyles.semiBold16.copyWith(color: Colors.white),
+            style: AppStyles.semiBold16(context).copyWith(color: Colors.white),
           ),
           const SizedBox(
             height: 8,
           ),
           Text(
             expancesItemsModel.date,
-            style: AppStyles.regular14.copyWith(color: const Color(0xffFAFAFA)),
+            style: AppStyles.regular14(context)
+                .copyWith(color: const Color(0xffFAFAFA)),
           ),
           const SizedBox(
             height: 16,
           ),
           Text(
             expancesItemsModel.price,
-            style: AppStyles.semiBold24.copyWith(color: Colors.white),
+            style: AppStyles.semiBold24(context).copyWith(color: Colors.white),
           ),
         ],
       ),

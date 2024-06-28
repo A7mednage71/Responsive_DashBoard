@@ -19,8 +19,9 @@ class UserInfoListTile extends StatelessWidget {
         elevation: 0,
         child: ListTile(
           leading: SvgPicture.asset(userInfo.image),
-          title: Text(userInfo.title, style: AppStyles.semiBold16),
-          subtitle: Text(userInfo.subtitle, style: AppStyles.regular12),
+          title: Text(userInfo.title, style: AppStyles.semiBold16(context)),
+          subtitle:
+              Text(userInfo.subtitle, style: AppStyles.regular12(context)),
         ),
       ),
     );

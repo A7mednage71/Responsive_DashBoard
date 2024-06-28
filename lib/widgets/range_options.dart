@@ -21,7 +21,7 @@ class RangeOptions extends StatelessWidget {
         children: [
           Text(
             "Monthly",
-            style: AppStyles.medium16,
+            style: AppStyles.medium16(context),
           ),
           const SizedBox(width: 12),
           Transform.rotate(

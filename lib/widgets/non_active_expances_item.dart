@@ -26,21 +26,21 @@ class NonActiveAllExpencesitem extends StatelessWidget {
           ),
           Text(
             expancesItemsModel.title,
-            style: AppStyles.semiBold16,
+            style: AppStyles.semiBold16(context),
           ),
           const SizedBox(
             height: 8,
           ),
           Text(
             expancesItemsModel.date,
-            style: AppStyles.regular14,
+            style: AppStyles.regular14(context),
           ),
           const SizedBox(
             height: 16,
           ),
           Text(
             expancesItemsModel.price,
-            style: AppStyles.semiBold24,
+            style: AppStyles.semiBold24(context),
           ),
         ],
       ),

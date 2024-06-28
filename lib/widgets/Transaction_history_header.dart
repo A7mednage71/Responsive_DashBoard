@@ -12,18 +12,19 @@ class TransactionHistoryHeader extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("Transaction History", style: AppStyles.semiBold20),
+            Text("Transaction History", style: AppStyles.semiBold20(context)),
             TextButton(
               onPressed: () {},
               child: Text("See all",
-                  style: AppStyles.medium16
+                  style: AppStyles.medium16(context)
                       .copyWith(color: const Color(0xff4EB7F2))),
             )
           ],
         ),
         const SizedBox(height: 16),
         Text("13 April 2022",
-            style: AppStyles.medium16.copyWith(color: const Color(0xffAAAAAA))),
+            style: AppStyles.medium16(context)
+                .copyWith(color: const Color(0xffAAAAAA))),
         const SizedBox(height: 16),
       ],
     );

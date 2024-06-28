@@ -14,7 +14,8 @@ class CustomTextField extends StatelessWidget {
             contentPadding: const EdgeInsets.all(20),
             hintText: "Type customer name",
             hintStyle:
-                AppStyles.regular16.copyWith(color: const Color(0xffAAAAAA)),
+                AppStyles.regular16(context)
+                .copyWith(color: const Color(0xffAAAAAA)),
             filled: true,
             fillColor: const Color(0xffFAFAFA),
             border: const OutlineInputBorder(
