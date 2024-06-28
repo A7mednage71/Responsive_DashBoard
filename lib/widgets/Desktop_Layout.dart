@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -12,6 +14,7 @@ class DesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    log("${MediaQuery.of(context).size.width}desktop layout");
     return const Row(
       children: [
         Expanded(

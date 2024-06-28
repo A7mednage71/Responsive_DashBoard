@@ -12,7 +12,7 @@ class TransactionHistoryHeader extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text("Transaction History", style: AppStyles.semiBold20),
+            Text("Transaction History", style: AppStyles.semiBold20),
             TextButton(
               onPressed: () {},
               child: Text("See all",

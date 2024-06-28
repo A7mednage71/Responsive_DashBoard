@@ -27,7 +27,7 @@ class MyCardItem extends StatelessWidget {
                 style: AppStyles.regular16
                     .copyWith(color: const Color(0xffFFFFFF)),
               ),
-              subtitle: const Text(
+              subtitle: Text(
                 "Syah Bandi",
                 style: AppStyles.medium20,
               ),
