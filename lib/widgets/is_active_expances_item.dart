@@ -13,7 +13,7 @@ class IsActiveAllExpencesitem extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xff4EB7F2),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(width: 1, color: const Color(0xffF1F1F1)),
+        border: Border.all(width: 1, color: const Color(0xff4EB7F2)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,24 +25,35 @@ class IsActiveAllExpencesitem extends StatelessWidget {
           const SizedBox(
             height: 34,
           ),
-          Text(
-            expancesItemsModel.title,
-            style: AppStyles.semiBold16(context).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              expancesItemsModel.title,
+              style:
+                  AppStyles.semiBold16(context).copyWith(color: Colors.white),
+            ),
           ),
           const SizedBox(
             height: 8,
           ),
-          Text(
-            expancesItemsModel.date,
-            style: AppStyles.regular14(context)
-                .copyWith(color: const Color(0xffFAFAFA)),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              expancesItemsModel.date,
+              style: AppStyles.regular14(context)
+                  .copyWith(color: const Color(0xffFAFAFA)),
+            ),
           ),
           const SizedBox(
             height: 16,
           ),
-          Text(
-            expancesItemsModel.price,
-            style: AppStyles.semiBold24(context).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              expancesItemsModel.price,
+              style:
+                  AppStyles.semiBold24(context).copyWith(color: Colors.white),
+            ),
           ),
         ],
       ),

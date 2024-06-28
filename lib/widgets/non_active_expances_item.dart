@@ -24,23 +24,32 @@ class NonActiveAllExpencesitem extends StatelessWidget {
           const SizedBox(
             height: 34,
           ),
-          Text(
-            expancesItemsModel.title,
-            style: AppStyles.semiBold16(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              expancesItemsModel.title,
+              style: AppStyles.semiBold16(context),
+            ),
           ),
           const SizedBox(
             height: 8,
           ),
-          Text(
-            expancesItemsModel.date,
-            style: AppStyles.regular14(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              expancesItemsModel.date,
+              style: AppStyles.regular14(context),
+            ),
           ),
           const SizedBox(
             height: 16,
           ),
-          Text(
-            expancesItemsModel.price,
-            style: AppStyles.semiBold24(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              expancesItemsModel.price,
+              style: AppStyles.semiBold24(context),
+            ),
           ),
         ],
       ),
